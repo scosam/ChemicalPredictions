@@ -22,13 +22,13 @@ Luckily there were no missing values or duplicate rows from the dataset, but the
 
 **Problem 1:** 35.3% of the experimental runs had at least one sensor feature that was an outlier using the standard definition of *values more than 1.5 times the IQR outside of the IQR (25th percentile to 75th percentile range).* This is accentuated by the large amount of white space in the histograms of the features that is numerically representented with large kurtosis values (>1000).
 
-![Feature Histogram](./image/feature_histogram.png)
+![Feature Histogram](./images/feature_histogram.png)
 
 **Solution:** Performed bootstrap null hypothesis testing to determine if the outlier values may be caused by a specific chemical species, chemical concentration, and experimental batch or if the values might be erroneous. The significance value was based on standard value of 0.05 divded by the number of tests (i.e. There are 6 chemicals tested for significance, so p-value must be less than 0.05/6). It was found that outlier values were associated with high concentrations (>350 ppm), chemical 5, and certain batches. Although the significance of these individual tests could be confounded with eachother, it is likely that the outlying data is not erroneous and we can keep it.
 
 **Problem 2:** Many of the predictor features are highly correlated, either positively or negatively, to each other, which can lead to high variance in the model weights.
 
-![Correlation Heatmap](./image/heatmap.png)
+![Correlation Heatmap](./images/heatmap.png)
 
 **Solution:** Reduce the dimensionality using PCA, or a similar method.
 
