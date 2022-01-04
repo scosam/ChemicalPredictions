@@ -1,5 +1,5 @@
 # Classification of Chemical Species
-![cover_photo] (./images/readme-intro.jpg)
+![cover_photo](./images/readme-intro.jpg)
 
 Many industries depend on precise chemical reactions in the manufacturing of their products. In order to acheive this precision the chemical species, concentration and temperature must be tightly controlled. If the wrong reactants species or concentration is used the chemical balance can result in undesired or incomplete chemical products.
 
@@ -12,7 +12,7 @@ The BioCircuits Institute at the University of California - San Diego has gracio
 The data provided contains 13,910 measurements that were taken from 16 chemical sensors that were exposed to 6 different gases (Ammonia, Acetaldehyde, Acetone, Ethylene, Ethanol, Toluene) of varying concentration levels. The measurement data was meticulously gathered over 36 months in a gas delivery platform facility at the ChemoSignal Laboratory in the BioCircuits Institute.
 
 Additioanl information can be found here: 
-> * [UCI Sensor Array Dataset] (http://archive.ics.uci.edu/ml/datasets/Gas+Sensor+Array+Drift+Dataset+at+Different+Concentrations)
+[UCI Sensor Array Dataset](http://archive.ics.uci.edu/ml/datasets/Gas+Sensor+Array+Drift+Dataset+at+Different+Concentrations)
 
 ## Citations
 
