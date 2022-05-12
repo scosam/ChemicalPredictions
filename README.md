@@ -33,6 +33,16 @@ Luckily there were no missing values or duplicate rows from the dataset, but the
 **Solution:** Reduce the dimensionality using PCA, or a similar method.
 
 ## Modeling Setup & Results
+**Baseline Model**
+To establish a baseline to compare against the more complex models that will be created, the accuracy of two simple rules was calculated. If the predicted class is selected at random, the theoretical model accuracy is 16.7%. If the predicted class is always the chemical species used in the most experiments, then the model accuracy is 28%.
+
+**Model Selection**
+Five model algorithms were evaluated for score time and accuracy: Linear SVC, k Nearest Neighbors, Random Forest, Gaussian Naive Bayes, Decision Tree. The average values of 3 fold cross validation on 3 datasets of varying training size were used to determine which model could perform well with a smaller amount of training data.
+![Model Performance](./images/model_perfromance.png)
+
+**Result**
+The random forest model performed the best so a random forest model was fit using every combination of test size, between 0.2 and 0.99, and number of sensors used resulting in 160 models being created. The conclusions we can make is that at least 3 sensors need to be used in 800 experimental runs to achieve an accuracy of 0.99.
+![Sensor Quantity vs. Data Test Size Accuracy Tradeoff](./images/finaltradeoff2.png)
 
 ## Citations
 
