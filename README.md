@@ -38,7 +38,7 @@ To establish a baseline to compare against the more complex models that will be 
 
 **Model Selection**
 Five model algorithms were evaluated for score time and accuracy: Linear SVC, k Nearest Neighbors, Random Forest, Gaussian Naive Bayes, Decision Tree. The average values of 3 fold cross validation on 3 datasets of varying training size were used to determine which model could perform well with a smaller amount of training data.
-![Model Performance](./images/model_perfromance.png)
+![Model Performance](./images/model_performance.png)
 
 **Result**
 The random forest model performed the best so a random forest model was fit using every combination of test size, between 0.2 and 0.99, and number of sensors used resulting in 160 models being created. The conclusions we can make is that at least 3 sensors need to be used in 800 experimental runs to achieve an accuracy of 0.99.
